@@ -1,0 +1,34 @@
+#banner{
+	margin-top:2%;
+	display:flex;
+	justify-content:center;
+}
+#banner .content{
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	border-radius:20px;
+	gap:20px;
+	width:70%;
+	aspect-ratio:34/11;
+	background-image:url('./imgs/banner/1.png');
+	transition: 0.5s background-image ease-in-out;
+	background-size: cover;
+	color:var(--leading-color);
+}
+#banner .content .arrow{
+	font-size:large;
+	background-color:var(--leading-color-alt);
+	color:var(--leading-color);
+	padding:8px 16px;
+	box-shadow: rgb(0 0 0 / 8%) 0px 2px 4px 0px, rgb(0 0 0 / 8%) 0px 0px 2px 1px;
+	border-radius:50%;
+}
+#banner .content .arrow:hover,#banner .content .arrow:hover{
+	/*background-color:rgb(
+	calc(var(--leading-color-r-alt) - 40),
+	calc(var(--leading-color-g-alt) - 40),
+	calc(var(--leading-color-b-alt) - 40));*/
+	background-color:var(--logo-color);
+	cursor:pointer;
+}

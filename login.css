@@ -106,4 +106,31 @@
   }
 }
 
+@media (max-width: 850px) {
+  #loginContent {
+    transform: scale(1.0);
+  }
+  #newAcc span{
+    flex-wrap:wrap;
+    flex-direction:column;
+  }
+  #newAcc span.check{
+    flex-direction:row;
+    flex-wrap:nowrap;
+  }
+  #newAcc input[name="email"]{
+   margin-left:5%;
+  }
+}
+@media (max-width: 500px) {
+  :root{
+	font-size:10px;
+  }
+  #newAcc input[type="checkbox"] + label{
+	font-size:1rem;
+  }
+  #loginContent {
+    transform: scale(0.8);
+  }
+}
 /*# sourceMappingURL=login.css.map */

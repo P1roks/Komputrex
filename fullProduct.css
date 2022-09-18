@@ -14,11 +14,12 @@
 #fullProduct #info h1:first-child {
   max-width: 300px;
   margin-bottom: 10%;
+  font-size: 2rem;
 }
 #fullProduct #info li {
   margin-right: 0;
   margin-bottom: 5%;
-  font-size: x-large;
+  font-size: 1.5rem;
 }
 #fullProduct #info ul {
   margin-left: 5%;
@@ -27,7 +28,6 @@
   border-radius: 30%;
   background-color: var(--logo-color);
   color: var(--leading-color-alt);
-  color: white;
   font-size: large;
   padding: 2%;
   appearance: none;
@@ -42,7 +42,7 @@
   font-size: 15px;
 }
 #fullProduct #shipping img {
-  filter: invert(1);
+  filter: invert(var(--inverted));
   height: 50px;
   width: 50px;
   margin-right: 20px;
@@ -53,6 +53,10 @@
 #fullProduct #shipping span:first-child {
   transform: scale(1.5);
   margin-bottom: 100px;
+}
+#fullProduct #shipping .lowered{
+  text-decoration: line-through;
+  color:gray;
 }
 
 #break {
@@ -72,7 +76,18 @@
 }
 #desc p {
   width: 70%;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
+@media(max-width:900px){
+	:root{
+		font-size: 10px;
+	}
+	#fullProduct{
+		flex-flow:column wrap;
+	}
+	#fullProduct > * {
+	  width: 100%;
+	}
+}
 /*# sourceMappingURL=fullProduct.css.map */

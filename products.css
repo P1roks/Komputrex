@@ -1,11 +1,11 @@
 #products {
   display: flex;
   flex-wrap: wrap;
-  width: 80%;
-  margin: 2% 13%;
+  justify-content: center;
+  width: 100%;
+  margin: 2% 0;
   gap: 20px;
 }
-
 .product {
   color: var(--leading-color-alt);
   text-decoration: none;
@@ -31,9 +31,14 @@
 }
 
 @media (max-width: 1300px) {
-  .product h3 {
-    font-size: 100%;
-  }
+	:root{
+		font-size:10px;
+	}
+}
+@media (max-width: 777px) {
+	:root{
+		font-size:5px;
+	}
 }
 
 /*# sourceMappingURL=products.css.map */
