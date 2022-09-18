@@ -1,0 +1,78 @@
+#fullProduct {
+  display: flex;
+  gap: 10%;
+  margin-left: 20%;
+  margin-top: 2%;
+}
+#fullProduct > * {
+  width: 33%;
+}
+#fullProduct img {
+  width: 275px;
+  height: 340px;
+}
+#fullProduct #info h1:first-child {
+  max-width: 300px;
+  margin-bottom: 10%;
+}
+#fullProduct #info li {
+  margin-right: 0;
+  margin-bottom: 5%;
+  font-size: x-large;
+}
+#fullProduct #info ul {
+  margin-left: 5%;
+}
+#fullProduct #shipping select {
+  border-radius: 30%;
+  background-color: var(--logo-color);
+  color: var(--leading-color-alt);
+  color: white;
+  font-size: large;
+  padding: 2%;
+  appearance: none;
+  outline: none;
+  text-align: center;
+}
+#fullProduct #shipping button {
+  padding: 2%;
+  background-color: var(--logo-color);
+  border-radius: 10px;
+  color: var(--leading-color-alt);
+  font-size: 15px;
+}
+#fullProduct #shipping img {
+  filter: invert(1);
+  height: 50px;
+  width: 50px;
+  margin-right: 20px;
+}
+#fullProduct #shipping span {
+  align-items: center;
+}
+#fullProduct #shipping span:first-child {
+  transform: scale(1.5);
+  margin-bottom: 100px;
+}
+
+#break {
+  display: flex;
+  justify-content: center;
+  margin: 5% 0;
+}
+#break hr {
+  width: 95%;
+  height: 1px;
+  background-color: var(--leading-color-alt);
+}
+
+#desc {
+  display: flex;
+  justify-content: center;
+}
+#desc p {
+  width: 70%;
+  font-size: 20px;
+}
+
+/*# sourceMappingURL=fullProduct.css.map */

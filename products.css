@@ -1,0 +1,39 @@
+#products {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 2% 13%;
+  gap: 20px;
+}
+
+.product {
+  color: var(--leading-color-alt);
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  border: 3px solid var(--leading-color-alt);
+  border-radius: 20px;
+  transition: 0.2s opacity;
+  width: 22%;
+  aspect-ratio: 335/390;
+  position: relative;
+}
+.product img {
+  aspect-ratio: 1/1;
+}
+.product:hover {
+  opacity: 70%;
+}
+.product .lowered {
+  text-decoration: line-through;
+  color: gray;
+}
+
+@media (max-width: 1300px) {
+  .product h3 {
+    font-size: 100%;
+  }
+}
+
+/*# sourceMappingURL=products.css.map */
