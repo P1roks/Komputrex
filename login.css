@@ -1,0 +1,136 @@
+#login {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#loginbox {
+  width: 50%;
+  height: 70%;
+  background-color: rgb(calc(var(--leading-color-r) - 10), calc(var(--leading-color-g) - 10), calc(var(--leading-color-b) - 10));
+  box-shadow: 2px 2px 9px rgb(calc(var(--leading-color-r-alt) - 90), calc(var(--leading-color-g-alt) - 90), calc(var(--leading-color-b-alt) - 90));
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#loginContent {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15%;
+  box-sizing: border-box;
+  transform: scale(1.5);
+}
+#loginContent input, #loginContent button {
+  background-color: var(--leading-color-alt);
+  color: var(--leading-color);
+}
+#loginContent input::placeholder {
+  color: var(--leading-color);
+}
+#loginContent input {
+  padding: 3%;
+  border-radius: 10px;
+}
+#loginContent input[type=radio] {
+  display: none;
+}
+#loginContent input[type=radio]:checked + label {
+  border-bottom: 2px solid red;
+}
+#loginContent button:hover {
+  cursor: pointer;
+  filter: brightness(80%);
+}
+#loginContent div {
+  justify-content: center;
+  display: flex;
+  gap: 20px;
+  margin-bottom: 5%;
+}
+#loginContent form {
+  display: flex;
+}
+#loginContent a {
+  color: darkcyan;
+}
+#loginContent button, #loginContent a, #loginContent label {
+  transition: 0.5s filter;
+}
+#loginContent a:hover {
+  filter: brightness(80%);
+}
+#loginContent label:hover {
+  cursor: pointer;
+  filter: brightness(80%);
+}
+#loginContent #existingAcc, #loginContent #newAcc {
+  gap: 20px;
+  flex-direction: column;
+}
+#loginContent #existingAcc span, #loginContent #newAcc span {
+  align-items: center;
+}
+#loginContent #existingAcc label[for=rules]:after, #loginContent #existingAcc label[for=ads]:after, #loginContent #newAcc label[for=rules]:after, #loginContent #newAcc label[for=ads]:after {
+  content: "*";
+  color: red;
+}
+#loginContent #existingAcc button, #loginContent #newAcc button {
+  padding: 2%;
+  font-size: 15px;
+  border-radius: 10px;
+}
+#loginContent #newAcc {
+  display: none;
+  gap: 10px;
+  align-items: center;
+}
+#loginContent #newAcc input {
+  padding: 2%;
+}
+#loginContent #newAcc span {
+  gap: 10px;
+}
+#loginContent #errors {
+  flex-direction: column;
+  color: red;
+  text-align: center;
+  object-fit: contain;
+}
+
+@media (max-width: 1280px) {
+  #loginContent {
+    transform: scale(1.2);
+  }
+}
+
+@media (max-width: 850px) {
+  #loginContent {
+    transform: scale(1.0);
+  }
+  #newAcc span{
+    flex-wrap:wrap;
+    flex-direction:column;
+  }
+  #newAcc span.check{
+    flex-direction:row;
+    flex-wrap:nowrap;
+  }
+  #newAcc input[name="email"]{
+   margin-left:5%;
+  }
+}
+@media (max-width: 500px) {
+  :root{
+	font-size:10px;
+  }
+  #newAcc input[type="checkbox"] + label{
+	font-size:1rem;
+  }
+  #loginContent {
+    transform: scale(0.8);
+  }
+}
+/*# sourceMappingURL=login.css.map */
